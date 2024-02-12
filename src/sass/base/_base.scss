@@ -1,0 +1,17 @@
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 30px;
+    font-weight: normal;
+}
+
+body {
+    background-image: url(/public/assets/img/pattern-bg-desktop.png);
+    background-repeat: no-repeat;
+    
+    @include mobile {
+        background-image: url(/public/assets/img/pattern-bg-mobile.png);
+        background-repeat: no-repeat;
+    }
+}

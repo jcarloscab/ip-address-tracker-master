@@ -1,7 +1,6 @@
-/* importamos las fuentes*/
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,700;1,400&display=swap");
 /* Definimos las Custom properties */
 /* Reseteamos los margin y paddings de todas las etiquetas */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,700;1,400&display=swap");
 *,
 *::before,
 *::after {
@@ -66,6 +65,7 @@ input {
   outline: none;
 }
 
+/* importamos las fuentes*/
 /* Definimos las fuentes */
 html {
   scroll-behavior: smooth;
@@ -73,4 +73,70 @@ html {
   font-size: 62.5%;
   font-size: 16px;
   color: black;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 30px;
+  font-weight: normal;
+}
+
+body {
+  background-image: url(/public/assets/img/pattern-bg-desktop.png);
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url(/public/assets/img/pattern-bg-mobile.png);
+    background-repeat: no-repeat;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 280px;
+}
+@media screen and (max-width: 375px) {
+  .header {
+    height: 300px;
+  }
+}
+
+.searcher {
+  min-width: 290px;
+  width: 40%;
+  height: 50px;
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+  border: none;
+}
+.searcher__text {
+  height: 100%;
+  flex: 1;
+  padding-left: 15px;
+}
+.searcher__text:hover {
+  cursor: pointer;
+}
+.searcher__text::-moz-placeholder {
+  color: hsl(0, 0%, 59%);
+}
+.searcher__text::placeholder {
+  color: hsl(0, 0%, 59%);
+}
+.searcher__button {
+  height: 100%;
+  background-color: black;
+  border: none;
+  padding: 0 20px;
+  transition: all 0.2s ease;
+}
+.searcher__button:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 17%);
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,36 @@
+.searcher {
+    min-width: 290px;
+    width: 40%;
+    height: 50px;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    border: none;
+
+    &__text {
+        height: 100%;
+        flex: 1;
+        padding-left: 15px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &::placeholder {
+            color: $dark-gray;
+        }
+    }
+
+    &__button {
+        height: 100%;
+        background-color: black;
+        border: none;
+        padding: 0 20px;
+        transition: all 0.2s ease;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $very-dark-gray;
+        }
+    }
+}

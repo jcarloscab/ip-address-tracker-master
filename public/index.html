@@ -25,8 +25,24 @@
     </style> -->
   </head>
   <body>
-    <h1 class="title">IP Address Tracker</h1>
-    Search for any IP address or domain IP Address Location Timezone UTC
+    <header class="header">
+      <h1 class="title">IP Address Tracker</h1>
+      <div class="searcher">
+        <input
+          type="text"
+          class="searcher__text"
+          placeholder="Search for any IP address or domain"
+        />
+        <button id="search" class="searcher__button">
+          <img
+            src="/public/assets/img/icon-arrow.svg"
+            aria-disabled="true"
+            alt=""
+          />
+        </button>
+      </div>
+    </header>
+    IP Address Location Timezone UTC
     <!-- add offset value dynamically using the API -->
     ISP
 
