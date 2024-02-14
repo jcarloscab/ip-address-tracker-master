@@ -1,0 +1,59 @@
+.board {
+    background-color: #fff;
+    width: 80%;
+    height: 150px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 13px rgba(0,0,0,0.2);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 999;
+
+    @include mobile {
+        flex-direction: column;
+        height: 250px;
+    }
+
+    &__separator {
+        width: 1px;
+        height: 60%;
+        background-color: $dark-gray;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__item {
+        height: 70%;
+        flex-basis: 20%;
+
+        @include mobile {
+            text-align: center;
+        }
+    }
+
+    &__item-title {
+        color: $dark-gray;
+        font-size: 0.7rem;
+        letter-spacing: 0.1rem;
+        margin-bottom: 10px;
+
+        @include mobile {
+            font-size: 0.6rem;
+        }
+    }
+
+    &__item-description {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: $very-dark-gray;
+
+        @include mobile {
+            font-size: 1rem;
+        }
+    }
+}

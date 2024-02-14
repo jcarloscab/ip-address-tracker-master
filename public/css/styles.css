@@ -84,8 +84,13 @@ h1 {
 }
 
 body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
   background-image: url(/public/assets/img/pattern-bg-desktop.png);
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (max-width: 375px) {
   body {
@@ -139,4 +144,70 @@ body {
 .searcher__button:hover {
   cursor: pointer;
   background-color: hsl(0, 0%, 17%);
+}
+
+.main {
+  position: relative;
+  flex-grow: 1;
+}
+
+.board {
+  background-color: #fff;
+  width: 80%;
+  height: 150px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 999;
+}
+@media screen and (max-width: 375px) {
+  .board {
+    flex-direction: column;
+    height: 250px;
+  }
+}
+.board__separator {
+  width: 1px;
+  height: 60%;
+  background-color: hsl(0, 0%, 59%);
+}
+@media screen and (max-width: 375px) {
+  .board__separator {
+    display: none;
+  }
+}
+.board__item {
+  height: 70%;
+  flex-basis: 20%;
+}
+@media screen and (max-width: 375px) {
+  .board__item {
+    text-align: center;
+  }
+}
+.board__item-title {
+  color: hsl(0, 0%, 59%);
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 375px) {
+  .board__item-title {
+    font-size: 0.6rem;
+  }
+}
+.board__item-description {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 17%);
+}
+@media screen and (max-width: 375px) {
+  .board__item-description {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

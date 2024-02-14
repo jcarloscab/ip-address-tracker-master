@@ -42,10 +42,32 @@
         </button>
       </div>
     </header>
-    IP Address Location Timezone UTC
-    <!-- add offset value dynamically using the API -->
-    ISP
-
+    <main class="main">
+      <section class="board">
+        <div class="board__item">
+          <h2 class="board__item-title">IP ADDRESS</h2>
+          <p id="ip" class="board__item-description">192.212.174.101</p>
+        </div>
+        <div class="board__separator"></div>
+        <div class="board__item">
+          <h2 class="board__item-title">LOCATION</h2>
+          <p id="location" class="board__item-description">
+            Brooklyn, NY 10001
+          </p>
+        </div>
+        <div class="board__separator"></div>
+        <div class="board__item">
+          <h2 class="board__item-title">TIMEZONE</h2>
+          <p id="time-zone" class="board__item-description">UTC-05:00</p>
+        </div>
+        <div class="board__separator"></div>
+        <div class="board__item">
+          <h2 class="board__item-title">ISP</h2>
+          <p id="isp" class="board__item-description">SpaceX Starlink</p>
+        </div>
+      </section>
+      <section class="map"></section>
+    </main>
     <!-- JavaScript -->
     <script src="/public/js/main.js"></script>
     <!-- <div class="attribution">

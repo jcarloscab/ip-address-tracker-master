@@ -7,8 +7,13 @@ h1 {
 }
 
 body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
     background-image: url(/public/assets/img/pattern-bg-desktop.png);
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
     
     @include mobile {
         background-image: url(/public/assets/img/pattern-bg-mobile.png);
