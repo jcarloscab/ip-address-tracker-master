@@ -8,3 +8,21 @@
         height: 300px;
     }
 }
+
+.error {
+    min-width: 290px;
+    width: 40%;
+    font-size: 1rem;
+    text-align: right;
+    color: rgb(114, 4, 4);
+    margin-top: 5px;
+    display: none;
+    
+    @include tablet {
+        font-size: 0.7rem;
+    }
+
+    &--show {
+        display: block;
+    }
+}

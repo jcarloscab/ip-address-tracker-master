@@ -7,6 +7,10 @@
     overflow: hidden;
     border: none;
 
+    &--error {
+        border: 2px solid rgb(233, 6, 6);
+    }
+
     &__text {
         height: 100%;
         flex: 1;

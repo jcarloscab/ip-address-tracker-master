@@ -111,6 +111,24 @@ body {
   }
 }
 
+.error {
+  min-width: 290px;
+  width: 40%;
+  font-size: 1rem;
+  text-align: right;
+  color: rgb(114, 4, 4);
+  margin-top: 5px;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .error {
+    font-size: 0.7rem;
+  }
+}
+.error--show {
+  display: block;
+}
+
 .searcher {
   min-width: 290px;
   width: 40%;
@@ -119,6 +137,9 @@ body {
   border-radius: 15px;
   overflow: hidden;
   border: none;
+}
+.searcher--error {
+  border: 2px solid rgb(233, 6, 6);
 }
 .searcher__text {
   height: 100%;
