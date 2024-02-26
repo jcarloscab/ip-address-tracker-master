@@ -31,8 +31,8 @@ Los usuarios deberian poder:
 
 ### Links
 
-- Solución URL: [Solución]()
-- Live Site URL: [Site]()
+- Solución URL: [Solución](https://www.frontendmentor.io/solutions/ipaddresstracker-api-3oMO6sLs-1)
+- Live Site URL: [Site](https://jcarloscab.github.io/ip-address-tracker-master/)
 
 ## Mi Proceso
 
